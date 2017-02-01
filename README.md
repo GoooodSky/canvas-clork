@@ -1,1 +1,5 @@
-.This is a clork made by canvas
+------
+
+**This is a clork use canvas and javascript.**
+
+------
