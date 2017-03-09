@@ -1,5 +1,5 @@
 ------
 
-**This is a clork use canvas and javascript.**
+**A clork use Canvas and Javascript.**
 
 ------
