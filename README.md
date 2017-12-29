@@ -7,7 +7,7 @@
 CVClork a clork drawed by canvas.It's a quartz analog clork which can display time and date.
 
 ## Change working mode
-### Just click once on the dial plate,it will change time mode to date mode or vice versa.                
+Just click once on the dial plate,it will change time mode to date mode or vice versa.             
 
 ![clork](./img/clork.png)  <----Click---->  ![clork](./img/date.png)
 
