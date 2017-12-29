@@ -4,8 +4,6 @@ var width = ctx.canvas.width;
 var height = ctx.canvas.height;
 var r = width / 2;
 var rem = width / 200;  //比例
-
-
 function drawBackground(){
     ctx.save();
     ctx.translate( r, r);
@@ -13,7 +11,6 @@ function drawBackground(){
     ctx.lineWidth = 10 * rem;
     ctx.arc( 0, 0, r - ctx.lineWidth / 2, 0, 2 * Math.PI, false);    
     ctx.stroke();//空心
-
     var hourNumbers = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2];  //画12个数字
     ctx.font = 18 * rem + 'px Arial';
     ctx.textAlign = 'center';
@@ -25,7 +22,6 @@ function drawBackground(){
     	var y = Math.sin(rad) * (r - 30 * rem);
         ctx.fillText(number, x, y);
     })
-
     for(var i = 0; i < 60; i++){                //画60个秒点
     	var rad = 2 * Math.PI / 60 * i;
     	var x = Math.cos(rad) * (r - 18 * rem);
@@ -42,9 +38,7 @@ function drawBackground(){
     	}
         ctx.fill();//实心
     }
-
 }
-
 function drawHour(hour, minute){
     ctx.save();
     ctx.beginPath();
@@ -58,8 +52,6 @@ function drawHour(hour, minute){
     ctx.stroke();
     ctx.restore();
 }
-
-
 function drawMinute(minute){
     ctx.save();
     ctx.beginPath();
@@ -72,7 +64,6 @@ function drawMinute(minute){
     ctx.stroke();
     ctx.restore();
 }
-
 function drawSecond(second){
    ctx.save();
     ctx.beginPath();
@@ -86,18 +77,12 @@ function drawSecond(second){
     ctx.fill();
     ctx.restore();
 }
-
 function drawDot() {
     ctx.beginPath();
     ctx.fillStyle = "#fff";
     ctx.arc(0, 0, 3 * rem, 0, 2 * Math.PI, false);
     ctx.fill();
 }
-
-
-
-
-
 function draw(){
     ctx.clearRect(0, 0, width, height);
     var now = new Date();
@@ -110,22 +95,6 @@ function draw(){
     drawSecond(second);
     drawDot();
     ctx.restore();
-  
 }
-
 draw();
 setInterval(draw, 1000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
