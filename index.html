@@ -4,17 +4,16 @@
     <meta name="viewport" content="width=device-width ,initial-scale=1">
 	<title>CVClork</title>
 	<style type="text/css">
-		#main{
+		div{
 			text-align: center;
 			margin-top: 250px;
 		}
 	</style>
 </head>
 <body>
-<div id="main" v-on:click="isShow=!isShow">
-	<canvas id="clork" height="200px" width="200px" v-show="isShow"></canvas>
-	<canvas id="date" height="200px" width="200px" v-show="!isShow"></canvas>
-</div>
+
+	<canvas-clork></canvas-clork>
+
 <script type="text/javascript" src="js/vue.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/date.js"></script>
