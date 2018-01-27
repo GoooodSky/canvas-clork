@@ -1,0 +1,31 @@
+{
+  "name": "canvas-clork",
+  "version": "1.0.0",
+  "description": "![clork](./img/clork.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uchihaty/Canvas-Clork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uchihaty/Canvas-Clork/issues"
+  },
+  "homepage": "https://github.com/uchihaty/Canvas-Clork#readme",
+  "dependencies": {
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.9",
+    "html-webpack-plugin": "^2.30.1",
+    "vue": "^2.5.13",
+    "vue-loader": "^13.7.0",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
